@@ -35,7 +35,7 @@ async function run(): Promise<void> {
     };
 
     const p = path.join(__dirname, './updated-positions.json');
-    await fs.promises.writeFile(p, JSON.stringify(newPositions));
+    await fs.promises.writeFile(p, JSON.stringify(newPositions, null, 2));
 
     core.setOutput('time', new Date().toTimeString());
   } catch (error) {
