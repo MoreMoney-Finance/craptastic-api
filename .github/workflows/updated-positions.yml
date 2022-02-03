@@ -16,6 +16,8 @@ jobs:
           npm run main
       - name: store updated file
         run: |
+          git config --global user.email "botty@example.com"
+          git config --global user.name "API Bot"
           git add src/updated-positions.json
           git commit -m "Updated positions"
       - name: Push changes
