@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-        npm install
-      - run: |
+      - name: run query
+        run: |
+          npm install
           npm run main
-      - run: |
+      - name: store updated file
+        run: |
           git add src/updated-positions.json
-      - run: |
           git commit -m "Updated positions"
       - name: Push changes
         uses: ad-m/github-push-action@master
