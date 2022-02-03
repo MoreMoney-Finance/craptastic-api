@@ -1,0 +1,25 @@
+name: 'updated-positions'
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+  schedule:
+  - cron: '0 0 * * *'
+
+jobs:
+  query:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+        npm install
+      - run: |
+          npm run main
+      - run: |
+          git add src/updated-positions.json
+      - run: |
+          git commit -m "Updated positions"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
