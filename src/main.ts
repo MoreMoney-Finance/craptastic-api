@@ -59,6 +59,7 @@ async function getUpdatedPositions(
       collateralValue: number;
       borrowablePer10k: number;
       owner: string;
+      trancheContract: string;
     }
   >
 > {
@@ -95,7 +96,8 @@ async function getUpdatedPositions(
     token: ethers.utils.getAddress(pos.token),
     collateralValue: parseFloat(ethers.utils.formatEther(pos.collateralValue)),
     borrowablePer10k: pos.borrowablePer10k.toNumber(),
-    owner: ethers.utils.getAddress(pos.owner)
+    owner: ethers.utils.getAddress(pos.owner),
+    trancheContract
   }));
 
   return Object.fromEntries(parsed.map((pos) => [pos.trancheId, pos]));
