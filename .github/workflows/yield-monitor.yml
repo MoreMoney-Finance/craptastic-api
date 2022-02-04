@@ -1,9 +1,9 @@
-name: 'updated-positions'
+name: 'yield-monitor'
 on: # rebuild any PRs and main branch changes
   pull_request:
   push:
   schedule:
-  - cron: '0 0 * * *'
+  - cron: '0 */3 * * *'
 
 jobs:
   query:
@@ -13,13 +13,13 @@ jobs:
       - name: run query
         run: |
           npm install
-          npm run updated-positions 
+          npm run yield-monitor
       - name: store updated file
         run: |
           git config --global user.email "botty@example.com"
           git config --global user.name "API Bot"
-          git add src/updated-positions.json
-          git commit -m "Updated positions"
+          git add src/yield-monitor.json
+          git commit -m "Updated Yield Monitor"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

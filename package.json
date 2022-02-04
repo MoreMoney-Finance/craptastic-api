@@ -11,7 +11,8 @@
     "lint": "eslint --fix src/**/*.ts",
     "package": "ncc build --source-map --license licenses.txt",
     "all": "npm run build && npm run format && npm run lint && npm run package && npm test",
-    "main": "ts-node src/main.ts",
+    "updated-positions": "ts-node src/updated-positions.ts",
+    "yield-monitor": "ts-node src/yield-monitor.ts",
     "contracts": "cp -r ../contracts/build/artifacts/* src/abi/; cp ../contracts/build/addresses.json src/"
   },
   "repository": {
@@ -27,6 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.6.0",
+    "axios": "^0.25.0",
     "ethers": "^5.5.0",
     "node-fetch": "3"
   },
@@ -41,8 +43,8 @@
     "js-yaml": "^4.1.0",
     "prettier": "2.5.1",
     "ts-jest": "^27.1.2",
+    "ts-node": "^9.1.1",
     "typescript": "^4.4.4",
-    "ts-node": "^9.1.1"
-
+    "ts-node-dev": "^1.1.8"
   }
 }
