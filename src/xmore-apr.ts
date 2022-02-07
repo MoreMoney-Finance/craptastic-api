@@ -5,6 +5,7 @@ import * as path from 'path';
 import xMore from './abi/contracts/governance/xMore.sol/xMore.json';
 import addresses from './addresses.json';
 import xMoreData from './xmore-data.json';
+import MoreToken from './abi/contracts/governance/MoreToken.sol/MoreToken.json';
 
 async function run(): Promise<void> {
   try {
@@ -21,8 +22,13 @@ async function run(): Promise<void> {
       provider
     ).totalSupply([]);
 
+    const balance = new ethers.Contract(
+      addresses[chainId].MoreToken,
+      MoreToken.abi,
+      provider
+    ).balanceOf(addresses[chainId].xMore);
+
     const supply = ethers.BigNumber.from(totalSupply).toNumber();
-    const balance = 1;
 
     const currentRatio = supply === 0 ? 1 : balance / supply;
 
@@ -46,12 +52,19 @@ async function run(): Promise<void> {
     console.log('finalAPR', finalAPR);
 
     const p = path.join(__dirname, './xmore-data.json');
-    await fs.promises.writeFile(p, JSON.stringify({
-      "timestamp": Date.now(),
-      "totalSupply": supply,
-      "moreBalance": 1,
-      "cachedAPR": finalAPR
-    }, null, 2)); 
+    await fs.promises.writeFile(
+      p,
+      JSON.stringify(
+        {
+          timestamp: Date.now(),
+          totalSupply: supply,
+          moreBalance: 1,
+          cachedAPR: finalAPR
+        },
+        null,
+        2
+      )
+    );
 
     core.debug('xmore-apr finish:' + new Date().toTimeString());
   } catch (error) {
