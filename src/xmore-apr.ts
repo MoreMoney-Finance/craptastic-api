@@ -15,7 +15,6 @@ async function run(): Promise<void> {
     const provider = new ethers.providers.JsonRpcProvider(
       'https://api.avax.network/ext/bc/C/rpc'
     );
-
     const totalSupply = await new ethers.Contract(
       addresses[chainId].xMore,
       xMore.abi,
