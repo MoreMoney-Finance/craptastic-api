@@ -58,7 +58,8 @@ async function run(): Promise<void> {
           timestamp: Date.now(),
           totalSupply: supply,
           moreBalance: 1,
-          cachedAPR: finalAPR
+          cachedAPR: finalAPR,
+          currentRatio: currentRatio
         },
         null,
         2
