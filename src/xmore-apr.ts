@@ -19,15 +19,19 @@ async function run(): Promise<void> {
       addresses[chainId].xMore,
       xMore.abi,
       provider
-    ).totalSupply([]);
+    ).totalSupply();
 
-    const balance = new ethers.Contract(
-      addresses[chainId].MoreToken,
-      MoreToken.abi,
-      provider
-    ).balanceOf(addresses[chainId].xMore);
+    const balance = parseFloat(
+      ethers.utils.formatEther(
+        await new ethers.Contract(
+          addresses[chainId].MoreToken,
+          MoreToken.abi,
+          provider
+        ).balanceOf(addresses[chainId].xMore)
+      )
+    );
 
-    const supply = ethers.BigNumber.from(totalSupply).toNumber();
+    const supply = parseFloat(ethers.utils.formatEther(totalSupply));
 
     const currentRatio = supply === 0 ? 1 : balance / supply;
 
@@ -38,12 +42,17 @@ async function run(): Promise<void> {
 
     let finalAPR = 0;
 
-    if (currentRatio !== cachedRatio) {
+    let timestamp = xMoreData.timestamp;
+    if (
+      currentRatio > cachedRatio + 0.001 ||
+      cachedRatio - 0.001 > currentRatio
+    ) {
       const diff = currentRatio - cachedRatio;
       const currentAPR =
         ((100 * diff) / currentRatio) *
         ((365 * 24 * 60 * 60 * 1000) / (Date.now() - xMoreData.timestamp));
       finalAPR = (xMoreData.cachedAPR + currentAPR) / 2;
+      timestamp = Date.now();
     } else {
       finalAPR = xMoreData.cachedAPR;
     }
@@ -55,7 +64,7 @@ async function run(): Promise<void> {
       p,
       JSON.stringify(
         {
-          timestamp: Date.now(),
+          timestamp,
           totalSupply: supply,
           moreBalance: 1,
           cachedAPR: finalAPR,
