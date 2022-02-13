@@ -35,14 +35,12 @@ async function run(): Promise<void> {
 
     const currentRatio = supply === 0 ? 1 : balance / supply;
 
-    const cachedRatio =
-      xMoreData.totalSupply === 0
-        ? 1
-        : xMoreData.moreBalance / xMoreData.totalSupply;
+    const cachedRatio = xMoreData.currentRatio;
 
-    let finalAPR = 0;
+    let finalAPR = xMoreData.cachedAPR;
 
     let timestamp = xMoreData.timestamp;
+    console.log('ratios', currentRatio, cachedRatio);
     if (
       currentRatio > cachedRatio + 0.001 ||
       cachedRatio - 0.001 > currentRatio
@@ -53,8 +51,6 @@ async function run(): Promise<void> {
         ((365 * 24 * 60 * 60 * 1000) / (Date.now() - xMoreData.timestamp));
       finalAPR = (xMoreData.cachedAPR + currentAPR) / 2;
       timestamp = Date.now();
-    } else {
-      finalAPR = xMoreData.cachedAPR;
     }
 
     console.log('finalAPR', finalAPR);
@@ -66,7 +62,7 @@ async function run(): Promise<void> {
         {
           timestamp,
           totalSupply: supply,
-          moreBalance: 1,
+          moreBalance: balance,
           cachedAPR: finalAPR,
           currentRatio: currentRatio
         },
