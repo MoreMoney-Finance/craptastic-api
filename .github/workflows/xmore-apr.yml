@@ -1,6 +1,7 @@
 name: 'xmore-apr'
 on: # rebuild any PRs and main branch changes
   pull_request:
+  workflow_dispatch:
   push:
   schedule:
   - cron: '0 */3 * * *'
