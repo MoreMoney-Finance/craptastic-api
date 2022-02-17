@@ -1,5 +1,5 @@
 {
-  "tstamp": 1645107330352,
+  "tstamp": 1645107615369,
   "positions": {
     "100000001": {
       "trancheId": 100000001,
@@ -576,10 +576,10 @@
     "23100000002": {
       "trancheId": 23100000002,
       "strategy": "0xaa3Ea561a656cbE310F2E10981085DA2D989f17e",
-      "collateral": "190499602771116362236",
+      "collateral": "190499558484930192582",
       "debt": 8975.90071990925,
       "token": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-      "collateralValue": 17493.853131459004,
+      "collateralValue": 17496.41541749673,
       "borrowablePer10k": 8000,
       "owner": "0xE894fA40889B4ed2be4A0DE343fb31A35443ac9E",
       "trancheContract": "0x23082269Ea17C4f5103bAB6cD9DFE1f6CE138616"
@@ -752,10 +752,10 @@
     "4800000002": {
       "trancheId": 4800000002,
       "strategy": "0xaa3Ea561a656cbE310F2E10981085DA2D989f17e",
-      "collateral": "2023778547318756869352",
+      "collateral": "2023778076842735727926",
       "debt": 78818.5233243375,
       "token": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-      "collateralValue": 185846.50131753297,
+      "collateralValue": 185873.72184415956,
       "borrowablePer10k": 8000,
       "owner": "0x000000e28fAA823d5B53ff6C2922c28335840375",
       "trancheContract": "0x23082269Ea17C4f5103bAB6cD9DFE1f6CE138616"
@@ -2240,7 +2240,7 @@
       "collateral": "22045378805647601689",
       "debt": 150.75,
       "token": "0x454E67025631C065d3cFAD6d71E6892f74487a15",
-      "collateralValue": 561.0931083504049,
+      "collateralValue": 561.1328642278886,
       "borrowablePer10k": 6897,
       "owner": "0x6cE699E7b3968fd238A99F2dccf104cBa99F9B9F",
       "trancheContract": "0x23082269Ea17C4f5103bAB6cD9DFE1f6CE138616"
@@ -3131,7 +3131,7 @@
       "collateral": "2497036871891312162887",
       "debt": 1740.1007487651957,
       "token": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
-      "collateralValue": 3098.072977,
+      "collateralValue": 3096.531,
       "borrowablePer10k": 6897,
       "owner": "0xc2cD825e3e5348B541f3Ee315636f95c9D2707C3",
       "trancheContract": "0x23082269Ea17C4f5103bAB6cD9DFE1f6CE138616"
@@ -3337,10 +3337,10 @@
     "45800000002": {
       "trancheId": 45800000002,
       "strategy": "0xaa3Ea561a656cbE310F2E10981085DA2D989f17e",
-      "collateral": "500652648978781388791",
+      "collateral": "500652532589561147002",
       "debt": 16588.797825294634,
       "token": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-      "collateralValue": 45975.65445652805,
+      "collateralValue": 45982.38840906147,
       "borrowablePer10k": 8000,
       "owner": "0xA6c36f7119B4D2b8f28357A2302e40456F7c0D93",
       "trancheContract": "0x23082269Ea17C4f5103bAB6cD9DFE1f6CE138616"
@@ -3538,7 +3538,7 @@
       "collateral": "32041692377279879896",
       "debt": 22.589708312204404,
       "token": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
-      "collateralValue": 39.754119,
+      "collateralValue": 39.734332,
       "borrowablePer10k": 6897,
       "owner": "0x39dBefBAE84C6FA5b4AA223E706315a2DbE36920",
       "trancheContract": "0x23082269Ea17C4f5103bAB6cD9DFE1f6CE138616"
@@ -3582,7 +3582,7 @@
       "collateral": "34555478027471433554",
       "debt": 349.5813046550205,
       "token": "0x454E67025631C065d3cFAD6d71E6892f74487a15",
-      "collateralValue": 879.4968209845873,
+      "collateralValue": 879.5591371444939,
       "borrowablePer10k": 6897,
       "owner": "0x9C9eAB2EcB88471F564130cf4bFcEc705eA80Ae9",
       "trancheContract": "0x23082269Ea17C4f5103bAB6cD9DFE1f6CE138616"
@@ -3678,10 +3678,10 @@
     "48900000002": {
       "trancheId": 48900000002,
       "strategy": "0x888fC8d90177a4097e196EF6BBDc7d2e8CfFDb17",
-      "collateral": "1158760527",
+      "collateral": "1158760320",
       "debt": 879.0515549647295,
       "token": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
-      "collateralValue": 1158.760527,
+      "collateralValue": 1158.76032,
       "borrowablePer10k": 8000,
       "owner": "0xaC2ceA36317dbA37aBC1683783300111Db451372",
       "trancheContract": "0x23082269Ea17C4f5103bAB6cD9DFE1f6CE138616"
