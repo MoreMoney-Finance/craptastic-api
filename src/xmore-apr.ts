@@ -114,7 +114,7 @@ async function run(): Promise<void> {
           timestamp,
           totalSupply: supply,
           moreBalance: balance,
-          cachedAPR: finalAPR,
+          cachedAPR: parseFloat(finalAPR),
           currentRatio: currentRatio
         },
         null,
