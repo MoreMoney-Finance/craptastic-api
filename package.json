@@ -13,6 +13,7 @@
     "all": "npm run build && npm run format && npm run lint && npm run package && npm test",
     "updated-positions": "ts-node src/updated-positions.ts",
     "yield-monitor": "ts-node src/yield-monitor.ts",
+    "strategy-metadata": "ts-node src/strategy-metadata.ts",
     "more-circulating-supply": "ts-node src/more-circulating-supply.ts",
     "xmore-apr": "ts-node src/xmore-apr.ts",
     "contracts": "cp -r ../contracts/build/artifacts/* src/abi/; cp ../contracts/build/addresses.json src/"
