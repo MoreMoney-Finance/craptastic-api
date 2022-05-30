@@ -12,6 +12,7 @@
     "package": "ncc build --source-map --license licenses.txt",
     "all": "npm run build && npm run format && npm run lint && npm run package && npm test",
     "updated-positions": "ts-node src/updated-positions.ts",
+    "v2-updated-positions": "ts-node src/v2-updated-positions.ts",
     "yield-monitor": "ts-node src/yield-monitor.ts",
     "strategy-metadata": "ts-node src/strategy-metadata.ts",
     "more-circulating-supply": "ts-node src/more-circulating-supply.ts",
