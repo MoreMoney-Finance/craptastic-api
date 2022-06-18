@@ -16,11 +16,7 @@ async function run(): Promise<void> {
     const updatedPositions = {
       ...(await getUpdatedPositions(
         prevPositions.tstamp,
-        addresses['43114'].StableLending
-      )),
-      ...(await getUpdatedPositions(
-        prevPositions.tstamp,
-        addresses['43114'].IsolatedLending
+        addresses['43114'].StableLending2
       ))
     };
     const jointPositions = Object.fromEntries(
