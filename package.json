@@ -13,6 +13,7 @@
     "all": "npm run build && npm run format && npm run lint && npm run package && npm test",
     "updated-positions": "ts-node src/updated-positions.ts",
     "v2-updated-positions": "ts-node src/v2-updated-positions.ts",
+    "cumulative-debt-positions": "ts-node src/cumulative-debt-positions.ts",
     "yield-monitor": "ts-node src/yield-monitor.ts",
     "strategy-metadata": "ts-node src/strategy-metadata.ts",
     "v2-strategy-metadata": "ts-node src/v2-strategy-metadata.ts",
