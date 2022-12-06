@@ -31,7 +31,7 @@ async function run(): Promise<void> {
       positions: jointPositions
     };
 
-    const previousPositionsMap = currentPositions?.reduce(function (
+    const previousPositionsMap = currentPositions?.positions?.reduce(function (
       map: any,
       obj: any
     ) {
@@ -59,9 +59,12 @@ async function run(): Promise<void> {
           cumulativeDebt: demote ? 0 : pos.cumulativeDebt + pos.debt
         };
       });
-
+    const payload = {
+      tstamp: newTstamp,
+      positions: mapPositionsDebt
+    };
     const p = path.join(__dirname, './cumulative-debt-positions.json');
-    await fs.promises.writeFile(p, JSON.stringify(mapPositionsDebt, null, 2));
+    await fs.promises.writeFile(p, JSON.stringify(payload, null, 2));
 
     core.setOutput('time', new Date().toTimeString());
   } catch (error) {
