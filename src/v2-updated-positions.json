@@ -1,5 +1,5 @@
 {
-  "tstamp": 1672621493864,
+  "tstamp": 1672707865130,
   "positions": {
     "100000005": {
       "trancheId": 100000005,
@@ -422,10 +422,10 @@
     "18600000005": {
       "trancheId": 18600000005,
       "strategy": "0x3d3cd4856ceca1639150549A4F2cE3F37f92Bd91",
-      "collateral": "61174101539282946636",
-      "debt": 195.5046281153963,
+      "collateral": "62026196513953165871",
+      "debt": 195.79802519594767,
       "token": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
-      "collateralValue": 856.012038120691,
+      "collateralValue": 734.0320963136428,
       "borrowablePer10k": 7000,
       "owner": "0xdAB04Ff1A8ef30826B34ab252eBC6A827B3Fcb0E",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1049,10 +1049,10 @@
     "44100000005": {
       "trancheId": 44100000005,
       "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
-      "collateral": "161858673855456512535",
-      "debt": 516.1532593833441,
+      "collateral": "185604055003986477384",
+      "debt": 516.5351049548561,
       "token": "0xF7D9281e8e363584973F946201b82ba72C965D27",
-      "collateralValue": 1989.875436545661,
+      "collateralValue": 2179.0390347523044,
       "borrowablePer10k": 6000,
       "owner": "0xcCFF69a21EF1c8E25bDa6B7E048D0026e9348f51",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1528,6 +1528,17 @@
       "collateralValue": 2326.6614335538584,
       "borrowablePer10k": 7000,
       "owner": "0x9F7E696f19e68A0821cD124b6e2C1f8576dFaD4A",
+      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
+    },
+    "57300000005": {
+      "trancheId": 57300000005,
+      "strategy": "0x9598173D41214353f68e453CD9a96EdFcb8bf8Ba",
+      "collateral": "1324516147802202373122",
+      "debt": 352.3320456314032,
+      "token": "0x9e295B5B976a184B14aD8cd72413aD846C299660",
+      "collateralValue": 880.8693338760496,
+      "borrowablePer10k": 6897,
+      "owner": "0x7B469e25E1963092c8d1f720905c696b2a21A3e7",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     }
   }
