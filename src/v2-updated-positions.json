@@ -1,5 +1,5 @@
 {
-  "tstamp": 1675818524845,
+  "tstamp": 1675904942594,
   "positions": {
     "100000005": {
       "trancheId": 100000005,
@@ -1192,10 +1192,10 @@
     "56600000005": {
       "trancheId": 56600000005,
       "strategy": "0x3F898DaDf9E0Bd678B0D1513a3a6D88Ef43aeC2A",
-      "collateral": "500057654855303929342",
-      "debt": 5533.835070603511,
+      "collateral": "554934697706572547256",
+      "debt": 6636.388215485707,
       "token": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-      "collateralValue": 10098.04718364697,
+      "collateralValue": 11183.09952165262,
       "borrowablePer10k": 8000,
       "owner": "0x57e9fFaC12705e7a9b3A3c7Be29DA20C109B382f",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1566,10 +1566,10 @@
     "63700000005": {
       "trancheId": 63700000005,
       "strategy": "0x9598173D41214353f68e453CD9a96EdFcb8bf8Ba",
-      "collateral": "1797629838667343809158",
-      "debt": 755.6231040022948,
+      "collateral": "1883472220222253338043",
+      "debt": 755.9385760226029,
       "token": "0x9e295B5B976a184B14aD8cd72413aD846C299660",
-      "collateralValue": 1374.4982667434501,
+      "collateralValue": 1427.8102584231601,
       "borrowablePer10k": 6897,
       "owner": "0x9114751E2095107820Fe33D62fd0eCd221BfA7Fd",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1671,6 +1671,17 @@
       "collateralValue": 41476.02697397879,
       "borrowablePer10k": 6897,
       "owner": "0xc11BD3d8Be430abBb5F284498d84517CeC467Fe8",
+      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
+    },
+    "65300000005": {
+      "trancheId": 65300000005,
+      "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
+      "collateral": "13177662491152378453",
+      "debt": 160.82306592827595,
+      "token": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+      "collateralValue": 282.7906413231907,
+      "borrowablePer10k": 7000,
+      "owner": "0x71Ae2f25F3B8Be836D3703BbAeCF6eBe6ACDB86d",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     }
   }
