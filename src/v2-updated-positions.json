@@ -1,5 +1,5 @@
 {
-  "tstamp": 1682125357330,
+  "tstamp": 1682212139828,
   "positions": {
     "100000005": {
       "trancheId": 100000005,
@@ -549,17 +549,6 @@
       "collateralValue": 2.2743673319035573,
       "borrowablePer10k": 6000,
       "owner": "0xD613C840Caa8EB854AbfdA79A4b709aa2Ab8e620",
-      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
-    },
-    "33700000005": {
-      "trancheId": 33700000005,
-      "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
-      "collateral": "33287275237503795951",
-      "debt": 862.2292936735532,
-      "token": "0xE5e9d67e93aD363a50cABCB9E931279251bBEFd0",
-      "collateralValue": 2732.7915840939468,
-      "borrowablePer10k": 6000,
-      "owner": "0x649E5AF88ffFE121ca4EA5cdD8E055c7189fE427",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     },
     "33800000005": {
@@ -1423,10 +1412,10 @@
     "71200000005": {
       "trancheId": 71200000005,
       "strategy": "0x9598173D41214353f68e453CD9a96EdFcb8bf8Ba",
-      "collateral": "6078519722743046233557",
-      "debt": 2883.262974238321,
+      "collateral": "6375163544565689602864",
+      "debt": 3087.2995932061394,
       "token": "0x9e295B5B976a184B14aD8cd72413aD846C299660",
-      "collateralValue": 4748.848085778781,
+      "collateralValue": 4985.801075123581,
       "borrowablePer10k": 6897,
       "owner": "0x25F4891C6b1ef81BfB1363abA947b9eBeD9D011C",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1434,10 +1423,10 @@
     "71700000005": {
       "trancheId": 71700000005,
       "strategy": "0x3d3cd4856ceca1639150549A4F2cE3F37f92Bd91",
-      "collateral": "450796368798205248836127",
-      "debt": 145274.13791811626,
+      "collateral": "454506886542639028236124",
+      "debt": 145287.34386334696,
       "token": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
-      "collateralValue": 234597.864652,
+      "collateralValue": 234626.679134,
       "borrowablePer10k": 6897,
       "owner": "0xCba1A275e2D858EcffaF7a87F606f74B719a8A93",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
