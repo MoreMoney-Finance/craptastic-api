@@ -1,5 +1,5 @@
 {
-  "tstamp": 1683248306108,
+  "tstamp": 1683334708032,
   "positions": {
     "100000005": {
       "trancheId": 100000005,
@@ -1519,17 +1519,6 @@
       "owner": "0x71Ae2f25F3B8Be836D3703BbAeCF6eBe6ACDB86d",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     },
-    "75000000005": {
-      "trancheId": 75000000005,
-      "strategy": "0x3d3cd4856ceca1639150549A4F2cE3F37f92Bd91",
-      "collateral": "28882",
-      "debt": 2.473695238693034,
-      "token": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
-      "collateralValue": 8.2025342112,
-      "borrowablePer10k": 8000,
-      "owner": "0x496b131837e5632f48aDd52Cfc2FD718821fF67B",
-      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
-    },
     "75100000005": {
       "trancheId": 75100000005,
       "strategy": "0x3d3cd4856ceca1639150549A4F2cE3F37f92Bd91",
@@ -1781,6 +1770,28 @@
       "collateralValue": 543.3790622436413,
       "borrowablePer10k": 8000,
       "owner": "0x9906cd623dbee156d8dEeE923733277F0e0cE196",
+      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
+    },
+    "79900000005": {
+      "trancheId": 79900000005,
+      "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
+      "collateral": "265842143756162227060",
+      "debt": 2502.6351824518188,
+      "token": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+      "collateralValue": 5009.689664773599,
+      "borrowablePer10k": 7000,
+      "owner": "0x82784592893afcDec068050c6a10A7d0233293f9",
+      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
+    },
+    "80000000005": {
+      "trancheId": 80000000005,
+      "strategy": "0x9598173D41214353f68e453CD9a96EdFcb8bf8Ba",
+      "collateral": "272391529619504688007",
+      "debt": 85.69769305391426,
+      "token": "0x9e295B5B976a184B14aD8cd72413aD846C299660",
+      "collateralValue": 213.00311703136424,
+      "borrowablePer10k": 6897,
+      "owner": "0x54120dA5d1ea03723d8774D204FdFf064E2186b0",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     }
   }
