@@ -1,5 +1,5 @@
 {
-  "tstamp": 1684371805200,
+  "tstamp": 1684458258665,
   "positions": {
     "100000005": {
       "trancheId": 100000005,
@@ -1357,10 +1357,10 @@
     "71700000005": {
       "trancheId": 71700000005,
       "strategy": "0x3d3cd4856ceca1639150549A4F2cE3F37f92Bd91",
-      "collateral": "559327412770598277795812",
-      "debt": 118869.66873568055,
+      "collateral": "564520636620841651405145",
+      "debt": 118880.79150963505,
       "token": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
-      "collateralValue": 222604.088308,
+      "collateralValue": 219117.802216,
       "borrowablePer10k": 6897,
       "owner": "0xCba1A275e2D858EcffaF7a87F606f74B719a8A93",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1676,10 +1676,10 @@
     "80300000005": {
       "trancheId": 80300000005,
       "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
-      "collateral": "111028878966869256039",
-      "debt": 822.6030999418297,
+      "collateral": "117186595284781913705",
+      "debt": 822.6800734413179,
       "token": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
-      "collateralValue": 1818.4517357692287,
+      "collateralValue": 1865.15932829234,
       "borrowablePer10k": 7000,
       "owner": "0xF2AD941ca98aEdEB8981b21a3b68C42234b00Aff",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1704,6 +1704,17 @@
       "collateralValue": 5.3417964754496,
       "borrowablePer10k": 7000,
       "owner": "0xd6c653291b7e158ec31DE22e71843E7E16ad7304",
+      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
+    },
+    "80800000005": {
+      "trancheId": 80800000005,
+      "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
+      "collateral": "94963689384910460535",
+      "debt": 779.3999410082849,
+      "token": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+      "collateralValue": 1511.456243565116,
+      "borrowablePer10k": 7000,
+      "owner": "0xc509082fa1821D4D0012f62CDAE630517699e208",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     }
   }
