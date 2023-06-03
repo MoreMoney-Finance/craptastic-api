@@ -1,0 +1,29 @@
+name: 'nft-snapshot'
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  query:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: run query
+        run: |
+          npm install
+          npm run nft-snapshot
+      - name: store updated file
+        run: |
+          git config --global user.email "botty@example.com"
+          git config --global user.name "API Bot"
+          git add src/nft-snapshot.json
+          git commit -m "V2 Updated positions"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}

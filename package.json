@@ -14,6 +14,7 @@
     "updated-positions": "ts-node src/updated-positions.ts",
     "v2-updated-positions": "ts-node src/v2-updated-positions.ts",
     "cumulative-debt-positions": "ts-node src/cumulative-debt-positions.ts",
+    "nft-snapshot": "ts-node src/nft-snapshot.ts",
     "yield-monitor": "ts-node src/yield-monitor.ts",
     "strategy-metadata": "ts-node src/strategy-metadata.ts",
     "v2-strategy-metadata": "ts-node src/v2-strategy-metadata.ts",
@@ -35,6 +36,7 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "axios": "^0.25.0",
+    "dotenv": "^16.1.3",
     "ethers": "^5.5.0",
     "node-fetch": "3"
   },
@@ -50,7 +52,7 @@
     "prettier": "2.5.1",
     "ts-jest": "^27.1.2",
     "ts-node": "^9.1.1",
-    "typescript": "^4.4.4",
-    "ts-node-dev": "^1.1.8"
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
   }
 }
