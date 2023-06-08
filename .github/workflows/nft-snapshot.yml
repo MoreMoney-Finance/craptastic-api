@@ -3,7 +3,7 @@ on: # rebuild any PRs and main branch changes
   pull_request:
   push:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '30 0 * * *'
 
 jobs:
   query:
@@ -19,7 +19,7 @@ jobs:
           git config --global user.email "botty@example.com"
           git config --global user.name "API Bot"
           git add src/nft-snapshot.json
-          git commit -m "V2 Updated positions"
+          git commit -m "NFT Snapshot positions"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

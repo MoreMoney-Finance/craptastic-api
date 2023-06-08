@@ -8,19 +8,27 @@ dotenv.config();
 import addresses from './addresses.json';
 
 import StableLending from './abi/contracts/StableLending.sol/StableLending.json';
+import NFTContract from './abi/contracts/NFTContract.sol/NFTContract.json';
 import prevPositions from './v2-updated-positions.json';
 import currentPositions from './nft-snapshot.json';
 
 type NFTSnapshotFile = {
   tstamp: number;
   positions: Record<string, Record<string, number>>;
-  eligible: Record<string, boolean>;
-  signatures: Record<string, string>;
+  eligible: Record<string, Record<string, boolean>>;
+  signatures: Record<string, Record<string, string>>;
 };
 
 // * CRITERIA FOR ELIGIBILITY PER EPOCH
 // * 1. The position must have a cumulative debt of at least 100
+// * 2.
 // ***
+// export function serializeMintData(data: MintData): SerializedMintData {
+//   return {
+//     ...data,
+//     ...{ price: data.price.toHexString(), timeout: data.timeout.toHexString() },
+//   };
+// }
 
 type PositionsType = Record<
   string,
@@ -40,7 +48,24 @@ type PositionsType = Record<
 const provider = new ethers.providers.JsonRpcProvider(
   'https://api.avax.network/ext/bc/C/rpc'
 );
+
+const tiers = [
+  {
+    name: 'tier1',
+    minDebt: 100,
+    epoch: 1,
+    threshold: 100 * 7 * 24 * 60 * 60 * 1000
+  },
+  {
+    name: 'tier2',
+    minDebt: 200,
+    epoch: 2,
+    threshold: 200 * 14 * 24 * 60 * 60 * 1000
+  }
+];
+
 const privateKey = process.env.PRIVATE_KEY || '';
+
 const signer = privateKey
   ? new ethers.Wallet(privateKey, provider)
   : ethers.Wallet.createRandom();
@@ -67,6 +92,22 @@ async function run(): Promise<void> {
       StableLending.abi,
       provider
     );
+
+    const nftContract = new ethers.Contract(
+      addresses['43114'].NFTContract,
+      NFTContract.abi,
+      provider
+    );
+
+    // TODO: After deploy the contract, we need to uncomment this
+    // get current epoch
+    // const contractEpoch = await nftContract.currentEpoch();
+
+    // const currentEpoch = contractEpoch ?? 0;
+    const currentEpoch = 0;
+    const tier = tiers[0];
+
+    // sum up the debt for each owner
     const values = Object.values(jointPositions);
     let mapPositionsDebt: Record<string, number> = {};
     for (let index = 0; index < values.length; index++) {
@@ -76,19 +117,20 @@ async function run(): Promise<void> {
       );
       const debt = parseFloat(ethers.utils.formatEther(position.debt));
       if (mapPositionsDebt[element.owner]) {
-        mapPositionsDebt[element.owner] += debt;
+        mapPositionsDebt[element.owner] +=
+          debt * (newTstamp - currentPositions.tstamp);
+        // mapPositionsDebt[element.owner] += debt;
       } else {
         mapPositionsDebt[element.owner] = debt;
       }
     }
 
-    const epoch = (await provider.getBlock(await provider.getBlockNumber()))
-      .timestamp;
-
     // go through the positions and check if they are eligible , debt > 100
-
     const eligible = Object.fromEntries(
-      Object.entries(mapPositionsDebt).map(([key, value]) => [key, value > 100])
+      Object.entries(mapPositionsDebt).map(([key, value]) => [
+        key,
+        value > tier.threshold
+      ])
     );
 
     // generate the signed message for each eligible position
@@ -100,12 +142,37 @@ async function run(): Promise<void> {
     //     ])
     //   )
     // );
-
+    const signedTypes = {
+      MintData: [
+        {
+          name: 'minter',
+          type: 'address'
+        },
+        {
+          name: 'epoch',
+          type: 'uint256'
+        }
+      ]
+    };
     const signatures = Object.fromEntries(
       await Promise.all(
-        Object.entries(eligible).map(async ([key, value]) => [
-          key,
-          await signer.signMessage(key + ',' + epoch)
+        Object.entries(eligible).map(async ([address, value]) => [
+          address,
+          await signer._signTypedData(
+            {
+              name: 'MMNFT',
+              version: '1',
+              chainId: 43114,
+              // TODO: it has to be the NFTContract address here
+              // verifyingContract: addresses['43114'].StableLending2,
+              salt: '0x' + '0'.repeat(64)
+            },
+            signedTypes,
+            {
+              minter: address,
+              epoch: currentEpoch
+            }
+          )
         ])
       )
     );
@@ -115,11 +182,21 @@ async function run(): Promise<void> {
       positions: {
         ...currentPositions.positions,
         ...{
-          [epoch]: mapPositionsDebt
+          [currentEpoch]: mapPositionsDebt
         }
       },
-      eligible: eligible,
-      signatures: signatures
+      eligible: {
+        ...currentPositions.eligible,
+        ...{
+          [currentEpoch]: eligible
+        }
+      },
+      signatures: {
+        ...currentPositions.signatures,
+        ...{
+          [currentEpoch]: signatures
+        }
+      }
     };
     const p = path.join(__dirname, './nft-snapshot.json');
     await fs.promises.writeFile(p, JSON.stringify(payload, null, 2));
