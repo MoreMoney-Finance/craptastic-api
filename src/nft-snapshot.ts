@@ -142,40 +142,51 @@ async function run(): Promise<void> {
     //     ])
     //   )
     // );
-    const signedTypes = {
+    const owner = signer;
+
+    const domain = {
+      name: 'MMNFT',
+      version: '1',
+      chainId: 43114,
+      verifyingContract: nftContract.address
+    };
+
+    const types = {
       MintData: [
-        {
-          name: 'minter',
-          type: 'address'
-        },
-        {
-          name: 'epoch',
-          type: 'uint256'
-        }
+        {name: 'minter', type: 'address'},
+        {name: 'epoch', type: 'uint256'}
       ]
     };
+
+    // generate the signed message for each eligible position
     const signatures = Object.fromEntries(
       await Promise.all(
         Object.entries(eligible).map(async ([address, value]) => [
           address,
-          await signer._signTypedData(
-            {
-              name: 'MMNFT',
-              version: '1',
-              chainId: 43114,
-              // TODO: it has to be the NFTContract address here
-              // verifyingContract: addresses['43114'].StableLending2,
-              salt: '0x' + '0'.repeat(64)
-            },
-            signedTypes,
-            {
-              minter: address,
-              epoch: currentEpoch
-            }
-          )
+          await owner._signTypedData(domain, types, {
+            minter: address,
+            epoch: 1
+          })
         ])
       )
     );
+
+    // add the new positions to the current positions
+    let eligibleSignatures = {
+      ...currentPositions.signatures,
+      ...{
+        [currentEpoch]: signatures
+      }
+    };
+
+    // remove the signatures for the positions that are not eligible anymore
+    Object.values(eligibleSignatures).forEach((signatures) => {
+      Object.keys(signatures).forEach((address) => {
+        if (!eligible[address]) {
+          delete signatures[address];
+        }
+      });
+    });
 
     const payload: NFTSnapshotFile = {
       tstamp: newTstamp,
@@ -191,12 +202,7 @@ async function run(): Promise<void> {
           [currentEpoch]: eligible
         }
       },
-      signatures: {
-        ...currentPositions.signatures,
-        ...{
-          [currentEpoch]: signatures
-        }
-      }
+      signatures: eligibleSignatures
     };
     const p = path.join(__dirname, './nft-snapshot.json');
     await fs.promises.writeFile(p, JSON.stringify(payload, null, 2));
