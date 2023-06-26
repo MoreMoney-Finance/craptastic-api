@@ -101,10 +101,9 @@ async function run(): Promise<void> {
 
     // TODO: After deploy the contract, we need to uncomment this
     // get current epoch
-    // const contractEpoch = await nftContract.currentEpoch();
+    const contractEpoch = await nftContract.currentEpoch();
 
-    // const currentEpoch = contractEpoch ?? 0;
-    const currentEpoch = 0;
+    const currentEpoch = contractEpoch ?? 0;
     const tier = tiers[0];
 
     // sum up the debt for each owner
@@ -165,28 +164,28 @@ async function run(): Promise<void> {
           address,
           await owner._signTypedData(domain, types, {
             minter: address,
-            epoch: 1
+            epoch: currentEpoch
           })
         ])
       )
     );
 
     // add the new positions to the current positions
-    let eligibleSignatures = {
+    let eligibleSignatures: Record<string, Record<string, string>> = {
       ...currentPositions.signatures,
       ...{
         [currentEpoch]: signatures
       }
     };
 
-    // remove the signatures for the positions that are not eligible anymore
-    Object.values(eligibleSignatures).forEach((signatures) => {
-      Object.keys(signatures).forEach((address) => {
-        if (!eligible[address]) {
-          delete signatures[address];
-        }
-      });
-    });
+    // remove the signatures from eligibleSignatures if the position is not eligible
+    // Object.entries(eligibleSignatures).forEach(([epoch, signatures]) => {
+    //   Object.entries(signatures).forEach(([address, signature]) => {
+    //     if (!eligible[address]) {
+    //       delete eligibleSignatures[epoch][address];
+    //     }
+    //   });
+    // });
 
     const payload: NFTSnapshotFile = {
       tstamp: newTstamp,
