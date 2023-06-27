@@ -73,7 +73,7 @@ const signer = privateKey
 async function run(): Promise<void> {
   try {
     core.debug(new Date().toTimeString());
-
+    core.debug(signer.address);
     const newTstamp = Date.now();
     const updatedPositions = {
       ...(await getUpdatedPositions(
