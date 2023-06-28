@@ -182,13 +182,13 @@ async function run(): Promise<void> {
     };
 
     // remove the signatures from eligibleSignatures if the position is not eligible
-    // Object.entries(eligibleSignatures).forEach(([epoch, signatures]) => {
-    //   Object.entries(signatures).forEach(([address, signature]) => {
-    //     if (!eligible[address]) {
-    //       delete eligibleSignatures[epoch][address];
-    //     }
-    //   });
-    // });
+    Object.entries(eligibleSignatures).forEach(([epoch, signatures]) => {
+      Object.entries(signatures).forEach(([address, signature]) => {
+        if (!eligible[address]) {
+          delete eligibleSignatures[epoch][address];
+        }
+      });
+    });
 
     const payload: NFTSnapshotFile = {
       tstamp: newTstamp,
