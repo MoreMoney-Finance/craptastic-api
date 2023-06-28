@@ -5,6 +5,9 @@ on: # rebuild any PRs and main branch changes
   schedule:
     - cron: '30 0 * * *'
 
+env:
+  PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+  
 jobs:
   query:
     runs-on: ubuntu-latest
@@ -26,5 +29,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           force: true
-        env:
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
