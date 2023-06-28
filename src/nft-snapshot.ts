@@ -66,6 +66,8 @@ const tiers = [
 
 const privateKey = process.env.PRIVATE_KEY || '';
 
+console.log('length', privateKey.length);
+
 const signer = privateKey
   ? new ethers.Wallet(privateKey, provider)
   : ethers.Wallet.createRandom();
