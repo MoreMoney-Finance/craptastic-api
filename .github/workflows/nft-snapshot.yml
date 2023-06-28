@@ -24,6 +24,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           force: true
         env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
