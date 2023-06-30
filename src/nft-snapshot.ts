@@ -81,6 +81,10 @@ async function run(): Promise<void> {
     const updatedPositions = {
       ...(await getUpdatedPositions(
         prevPositions.tstamp,
+        addresses['43114'].StableLending
+      )),
+      ...(await getUpdatedPositions(
+        prevPositions.tstamp,
         addresses['43114'].StableLending2
       ))
     };
@@ -90,7 +94,13 @@ async function run(): Promise<void> {
         .map((pos: any) => [pos.trancheId, pos])
     );
 
-    const lendingContract = new ethers.Contract(
+    const stableLendingContract = new ethers.Contract(
+      addresses['43114'].StableLending,
+      StableLending.abi,
+      provider
+    );
+
+    const stableLending2Contract = new ethers.Contract(
       addresses['43114'].StableLending2,
       StableLending.abi,
       provider
@@ -114,9 +124,13 @@ async function run(): Promise<void> {
     let mapPositionsDebt: Record<string, number> = {};
     for (let index = 0; index < values.length; index++) {
       const element = values[index];
-      const position = await lendingContract.viewPositionMetadata(
-        element.trancheId
-      );
+      const position =
+        element.trancheContract === addresses['43114'].StableLending
+          ? await stableLendingContract.viewPositionMetadata(element.trancheId)
+          : await stableLending2Contract.viewPositionMetadata(
+              element.trancheId
+            );
+
       const debt = parseFloat(ethers.utils.formatEther(position.debt));
       if (mapPositionsDebt[element.owner]) {
         mapPositionsDebt[element.owner] +=
