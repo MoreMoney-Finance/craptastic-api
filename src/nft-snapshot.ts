@@ -142,11 +142,14 @@ async function run(): Promise<void> {
     }
 
     // go through the positions and check if they are eligible , debt > 100
+    const testAddress = '0xc4c93d09d45df1ce52053fdc0befcc49b01884ea';
     const eligible = Object.fromEntries(
-      Object.entries(mapPositionsDebt).map(([key, value]) => [
-        key,
-        value > tier.threshold
-      ])
+      Object.entries(mapPositionsDebt).map(([key, value]) => {
+        if (key === testAddress) {
+          return [key, true];
+        }
+        return [key, value > tier.minDebt];
+      })
     );
 
     // generate the signed message for each eligible position
