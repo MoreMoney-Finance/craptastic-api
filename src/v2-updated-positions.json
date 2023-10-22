@@ -1,5 +1,5 @@
 {
-  "tstamp": 1697849599816,
+  "tstamp": 1697936317819,
   "positions": {
     "100000005": {
       "trancheId": 100000005,
@@ -505,17 +505,6 @@
       "collateralValue": 13924.648375548682,
       "borrowablePer10k": 7000,
       "owner": "0x4E5b2447077fBbe3bD3d69BEE701344e9cA7A8Dc",
-      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
-    },
-    "37000000005": {
-      "trancheId": 37000000005,
-      "strategy": "0x9598173D41214353f68e453CD9a96EdFcb8bf8Ba",
-      "collateral": "13350074028708715415067",
-      "debt": 5930.099446068235,
-      "token": "0x9e295B5B976a184B14aD8cd72413aD846C299660",
-      "collateralValue": 9750.82761203132,
-      "borrowablePer10k": 6897,
-      "owner": "0xaF308D1dF7463866B53a6904faeE21C3B4b77D0E",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     },
     "38100000005": {
@@ -1434,10 +1423,10 @@
     "88500000005": {
       "trancheId": 88500000005,
       "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
-      "collateral": "13227387",
-      "debt": 1601.9996265844404,
+      "collateral": "13562595",
+      "debt": 1602.131449216085,
       "token": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
-      "collateralValue": 3917.90613036711,
+      "collateralValue": 4064.398305331167,
       "borrowablePer10k": 8000,
       "owner": "0xDcbeDA028cE56568F5F38a6e9532A297429F953a",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1451,6 +1440,17 @@
       "collateralValue": 104.119346,
       "borrowablePer10k": 6897,
       "owner": "0x57e9fFaC12705e7a9b3A3c7Be29DA20C109B382f",
+      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
+    },
+    "88900000005": {
+      "trancheId": 88900000005,
+      "strategy": "0x3F898DaDf9E0Bd678B0D1513a3a6D88Ef43aeC2A",
+      "collateral": "589811748283579323942",
+      "debt": 3503.6917685647386,
+      "token": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "collateralValue": 5715.295304655577,
+      "borrowablePer10k": 8000,
+      "owner": "0xaF308D1dF7463866B53a6904faeE21C3B4b77D0E",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     }
   }
