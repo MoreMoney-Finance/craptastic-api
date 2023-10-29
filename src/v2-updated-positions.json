@@ -1,5 +1,5 @@
 {
-  "tstamp": 1698454378284,
+  "tstamp": 1698541083565,
   "positions": {
     "100000005": {
       "trancheId": 100000005,
@@ -1269,10 +1269,10 @@
     "84600000005": {
       "trancheId": 84600000005,
       "strategy": "0x3F898DaDf9E0Bd678B0D1513a3a6D88Ef43aeC2A",
-      "collateral": "3749318292574562670606",
-      "debt": 26137.600886314955,
+      "collateral": "3350313339554099597837",
+      "debt": 25642.298993101307,
       "token": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-      "collateralValue": 40629.10149770011,
+      "collateralValue": 37185.43548199119,
       "borrowablePer10k": 8000,
       "owner": "0xCba1A275e2D858EcffaF7a87F606f74B719a8A93",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1423,10 +1423,10 @@
     "88500000005": {
       "trancheId": 88500000005,
       "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
-      "collateral": "14731043",
-      "debt": 2498.5270530581815,
+      "collateral": "15024199",
+      "debt": 2599.462385160202,
       "token": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
-      "collateralValue": 5009.412511751191,
+      "collateralValue": 5121.983899237494,
       "borrowablePer10k": 8000,
       "owner": "0xDcbeDA028cE56568F5F38a6e9532A297429F953a",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1467,10 +1467,10 @@
     "89000000005": {
       "trancheId": 89000000005,
       "strategy": "0x3d3cd4856ceca1639150549A4F2cE3F37f92Bd91",
-      "collateral": "16556062305839848557713",
-      "debt": 2075.1314176105598,
+      "collateral": "18737481648033013847584",
+      "debt": 2445.8979625899315,
       "token": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
-      "collateralValue": 4190.039683,
+      "collateralValue": 4849.144756,
       "borrowablePer10k": 6897,
       "owner": "0xD3b748427360dC0B3BC57934411Fde6f0db3745c",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
@@ -1528,6 +1528,17 @@
       "collateralValue": 149.97425119729965,
       "borrowablePer10k": 6897,
       "owner": "0x9906cd623dbee156d8dEeE923733277F0e0cE196",
+      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
+    },
+    "89800000005": {
+      "trancheId": 89800000005,
+      "strategy": "0x3d3cd4856ceca1639150549A4F2cE3F37f92Bd91",
+      "collateral": "3630602535415325657826",
+      "debt": 404.8763444003227,
+      "token": "0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd",
+      "collateralValue": 939.577557,
+      "borrowablePer10k": 6897,
+      "owner": "0xD9E23cAB4dbfC40613247Ea97518A3Bc55e2BD1D",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50"
     }
   }
