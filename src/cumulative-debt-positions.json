@@ -1,5 +1,5 @@
 {
-  "tstamp": 1700094672282,
+  "tstamp": 1700181059049,
   "positions": [
     {
       "trancheId": 100000005,
@@ -11,7 +11,7 @@
       "borrowablePer10k": 8000,
       "owner": "0xC74401498312326cE31A23494eCbaC1449bd7235",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 5447.028619987611
+      "cumulativeDebt": 5463.951427350679
     },
     {
       "trancheId": 400000005,
@@ -23,7 +23,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xC74401498312326cE31A23494eCbaC1449bd7235",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 1112.828358725099
+      "cumulativeDebt": 1116.2856895483226
     },
     {
       "trancheId": 500000005,
@@ -35,7 +35,7 @@
       "borrowablePer10k": 8000,
       "owner": "0xC74401498312326cE31A23494eCbaC1449bd7235",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 795.6381487329958
+      "cumulativeDebt": 798.1100342436225
     },
     {
       "trancheId": 2500000005,
@@ -47,7 +47,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x1179079A06f55226684ec50405e61583c381aaE1",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 345316.05661531654
+      "cumulativeDebt": 346388.88319897576
     },
     {
       "trancheId": 3600000005,
@@ -59,7 +59,7 @@
       "borrowablePer10k": 8000,
       "owner": "0x6a035A701C2a156E64a9c0FcD02054b4f587cBfe",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 11328.942442270443
+      "cumulativeDebt": 11534.923213948088
     },
     {
       "trancheId": 4300000005,
@@ -71,7 +71,7 @@
       "borrowablePer10k": 8000,
       "owner": "0x8d2Fd7e70576D9E132131eb7Ede08A89e8981C61",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 67702.72061325908
+      "cumulativeDebt": 67915.9321377604
     },
     {
       "trancheId": 4400000005,
@@ -83,7 +83,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x8d2Fd7e70576D9E132131eb7Ede08A89e8981C61",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 39225.336354405845
+      "cumulativeDebt": 39671.07881297864
     },
     {
       "trancheId": 4800000005,
@@ -95,7 +95,7 @@
       "borrowablePer10k": 8000,
       "owner": "0xd6c653291b7e158ec31DE22e71843E7E16ad7304",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 418.99541097805957
+      "cumulativeDebt": 420.29714429371955
     },
     {
       "trancheId": 5400000005,
@@ -107,7 +107,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x8a606c4d3fDFd5A99ee3dE3883316277127901C3",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 234253.05070663738
+      "cumulativeDebt": 234992.0193208539
     },
     {
       "trancheId": 5500000005,
@@ -119,7 +119,7 @@
       "borrowablePer10k": 8000,
       "owner": "0x8a606c4d3fDFd5A99ee3dE3883316277127901C3",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 1821.7048542133791
+      "cumulativeDebt": 1827.3645197798674
     },
     {
       "trancheId": 5800000005,
@@ -131,7 +131,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x368955eFB1bF001683cb5F7AB223380CAf0b86e5",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 543755.2911367116
+      "cumulativeDebt": 545444.6279635441
     },
     {
       "trancheId": 6300000005,
@@ -143,7 +143,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x83e29A638cd3d5C641f0982ad4d4E743256b765c",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 579.4820175801647
+      "cumulativeDebt": 590.2131660538714
     },
     {
       "trancheId": 6400000005,
@@ -155,7 +155,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x7Fe26D7DDD10c93126171347711cbF25503Dba6F",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 613.2818009545831
+      "cumulativeDebt": 624.638871342631
     },
     {
       "trancheId": 7100000005,
@@ -167,7 +167,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xd3ec1BA81E5d4A8b1d93f4Bc098dDe4BF89c5A8a",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 579.9277720061799
+      "cumulativeDebt": 590.6671751914795
     },
     {
       "trancheId": 7200000005,
@@ -179,7 +179,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x76db558De1CA29Ff2DcaaEa1dF9e73b38e1a2420",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 1149.3271807530823
+      "cumulativeDebt": 1152.8979059748394
     },
     {
       "trancheId": 7500000005,
@@ -191,7 +191,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x25e7dC77608b369f305a8e849B21d3809353Cb60",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 579.4019976632518
+      "cumulativeDebt": 590.1316642866453
     },
     {
       "trancheId": 7600000005,
@@ -203,7 +203,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x78fA2e6445feC44DCC18E511C1fAd206f2C2E6D5",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 583.1699781865593
+      "cumulativeDebt": 593.9694222270512
     },
     {
       "trancheId": 7700000005,
@@ -215,7 +215,7 @@
       "borrowablePer10k": 8000,
       "owner": "0x02fDdBCE1546371aBd103Fd3CEcFf6040141EB53",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 1272.5677079481352
+      "cumulativeDebt": 1288.4748042974868
     },
     {
       "trancheId": 9000000005,
@@ -227,7 +227,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x2C57dfD740D4b0C509C037725edcAe6322a60dC9",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 2440110.859806647
+      "cumulativeDebt": 2447691.7867497355
     },
     {
       "trancheId": 10600000005,
@@ -239,7 +239,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xaBf0f7bD0Dc8Ce44b084B4B66b8Db97F1b9Ce419",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 2502438.443973536
+      "cumulativeDebt": 2511242.5029682764
     },
     {
       "trancheId": 11200000005,
@@ -251,7 +251,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x266b04A408dA888c1749b1d6344f27756b23dD19",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 324559.2688697944
+      "cumulativeDebt": 329552.4883908681
     },
     {
       "trancheId": 11600000005,
@@ -263,7 +263,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x84A642d8F5aF837256eAC4c46264a0d53D66Fd65",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 77447.13533878872
+      "cumulativeDebt": 77801.45432337532
     },
     {
       "trancheId": 11700000005,
@@ -275,7 +275,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x3172aee5e0B47bB23e87db93327F58E06e6A73B6",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 1415.6580071063984
+      "cumulativeDebt": 1420.0561679051755
     },
     {
       "trancheId": 15100000005,
@@ -287,7 +287,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x6Bfaa30eD20A83777180e14fcB07Bb329e0D9FcC",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 8738.107686640427
+      "cumulativeDebt": 8765.255205666883
     },
     {
       "trancheId": 15200000005,
@@ -299,7 +299,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x283A2549b640E56901A8Ced2Ec5277A32CfE6425",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 731445.5593338481
+      "cumulativeDebt": 733718.0115570212
     },
     {
       "trancheId": 15400000005,
@@ -311,7 +311,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xa4A1FFC4B4fb9F215136Bf95753676E7899A141F",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 3258.3482693648666
+      "cumulativeDebt": 3317.5909651715006
     },
     {
       "trancheId": 15500000005,
@@ -323,7 +323,7 @@
       "borrowablePer10k": 6897,
       "owner": "0xb6C4C61FeF74AE1d11784013C35C4D5fd0CA2D65",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 128885.94570606253
+      "cumulativeDebt": 129286.36806165418
     },
     {
       "trancheId": 15700000005,
@@ -335,7 +335,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x3F2Dc29Ec48Ebc28EebDB8769Ea1b0BD090E3409",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 333.5819849667621
+      "cumulativeDebt": 334.6183561821928
     },
     {
       "trancheId": 19200000005,
@@ -347,7 +347,7 @@
       "borrowablePer10k": 8000,
       "owner": "0x28E87098e0da758926f2907DB50Ab9B7dB43BA00",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 595.1274904473355
+      "cumulativeDebt": 596.9764302234826
     },
     {
       "trancheId": 20400000005,
@@ -359,7 +359,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x6a035A701C2a156E64a9c0FcD02054b4f587cBfe",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 43237.64299507272
+      "cumulativeDebt": 44085.43991654473
     },
     {
       "trancheId": 21100000005,
@@ -371,7 +371,7 @@
       "borrowablePer10k": 6897,
       "owner": "0xB7DB9f558f8DcBf34cC803A1083B6797dc1368Bd",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 85832.8587099527
+      "cumulativeDebt": 86100.2445458608
     },
     {
       "trancheId": 25900000005,
@@ -383,7 +383,7 @@
       "borrowablePer10k": 6897,
       "owner": "0xA5E8903251C49412E835EA341885fE56f80D2960",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 50234.938943948306
+      "cumulativeDebt": 50391.00865717222
     },
     {
       "trancheId": 27100000005,
@@ -395,7 +395,7 @@
       "borrowablePer10k": 6000,
       "owner": "0xd328097602b9Cef563A294EB940f6F9F781A2e0f",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 200536.29043960318
+      "cumulativeDebt": 201597.3290133577
     },
     {
       "trancheId": 28800000005,
@@ -407,7 +407,7 @@
       "borrowablePer10k": 8000,
       "owner": "0xFE362f889a2c843708DaF7D32eD70ec6188a3A47",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 12750.903239962678
+      "cumulativeDebt": 12963.418293962055
     },
     {
       "trancheId": 29900000005,
@@ -419,7 +419,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x244Dd4d5E058857f3347429D5a648Af2b79903f8",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 506298.706179235
+      "cumulativeDebt": 507871.6730333841
     },
     {
       "trancheId": 31400000005,
@@ -431,7 +431,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x649E5AF88ffFE121ca4EA5cdD8E055c7189fE427",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 1835.4610303750396
+      "cumulativeDebt": 1868.8330491091313
     },
     {
       "trancheId": 32400000005,
@@ -443,7 +443,7 @@
       "borrowablePer10k": 8000,
       "owner": "0x4dD06d3f05d573DB027459E8DC942e37249D71A8",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 178.62481639464676
+      "cumulativeDebt": 179.92864717125002
     },
     {
       "trancheId": 33300000005,
@@ -455,7 +455,7 @@
       "borrowablePer10k": 6000,
       "owner": "0xC74401498312326cE31A23494eCbaC1449bd7235",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 6918.1829627752695
+      "cumulativeDebt": 6968.680648634943
     },
     {
       "trancheId": 33500000005,
@@ -467,7 +467,7 @@
       "borrowablePer10k": 6000,
       "owner": "0xD613C840Caa8EB854AbfdA79A4b709aa2Ab8e620",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 359.33548634742357
+      "cumulativeDebt": 360.4518684409301
     },
     {
       "trancheId": 33800000005,
@@ -479,7 +479,7 @@
       "borrowablePer10k": 6897,
       "owner": "0xBD4984f0Cd2557519388594D79d88DaB3a97F74A",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 12930.097194440417
+      "cumulativeDebt": 12970.268370190135
     },
     {
       "trancheId": 36500000005,
@@ -491,19 +491,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x4E5b2447077fBbe3bD3d69BEE701344e9cA7A8Dc",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 1363640.0861719935
-    },
-    {
-      "trancheId": 38100000005,
-      "strategy": "0x9598173D41214353f68e453CD9a96EdFcb8bf8Ba",
-      "collateral": "5851785182165414611338",
-      "debt": 2026.552853418897,
-      "token": "0x9e295B5B976a184B14aD8cd72413aD846C299660",
-      "collateralValue": 3985.8021336436354,
-      "borrowablePer10k": 6897,
-      "owner": "0x4Ee32969d2152c58D1F6e87aBE3e5084379A4683",
-      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 652296.6996942081
+      "cumulativeDebt": 1367876.637896023
     },
     {
       "trancheId": 39100000005,
@@ -515,7 +503,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x36EE0ADD9bE9c442380cEbd9f362960Be4B7E6E5",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 295127.90508206765
+      "cumulativeDebt": 296330.4581126501
     },
     {
       "trancheId": 39400000005,
@@ -527,7 +515,7 @@
       "borrowablePer10k": 6897,
       "owner": "0xa70d7F7b7Ff356E904B5f7Afe2f41e8F9005434E",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 52085.414782409134
+      "cumulativeDebt": 52274.30471067769
     },
     {
       "trancheId": 40800000005,
@@ -539,7 +527,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x4D48267E36FfFd8638c1cE5ba98CCf8091D98ca2",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 187508.38274751315
+      "cumulativeDebt": 188121.05425456044
     },
     {
       "trancheId": 42000000005,
@@ -551,7 +539,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x562574AF66836b1d30e69815bDf0740A7BD7C437",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 3134.920435086225
+      "cumulativeDebt": 3144.659993719503
     },
     {
       "trancheId": 42800000005,
@@ -563,7 +551,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x4D48267E36FfFd8638c1cE5ba98CCf8091D98ca2",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 26296.593156385028
+      "cumulativeDebt": 26430.520188541504
     },
     {
       "trancheId": 43300000005,
@@ -575,7 +563,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x649E5AF88ffFE121ca4EA5cdD8E055c7189fE427",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 393736.0702359086
+      "cumulativeDebt": 395121.0908491502
     },
     {
       "trancheId": 43800000005,
@@ -587,7 +575,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x0eC9eFC8C5305978Cb957c74b228D4949F5e9DD0",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 96665.39945282276
+      "cumulativeDebt": 96965.71914044318
     },
     {
       "trancheId": 44200000005,
@@ -599,7 +587,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xd1C4359A5d9A0696aEB0c406248796d876e82f00",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 60401.444599282484
+      "cumulativeDebt": 60589.09957279482
     },
     {
       "trancheId": 44600000005,
@@ -611,7 +599,7 @@
       "borrowablePer10k": 6000,
       "owner": "0x649E5AF88ffFE121ca4EA5cdD8E055c7189fE427",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 2977.7370135050246
+      "cumulativeDebt": 3013.186263665799
     },
     {
       "trancheId": 46600000005,
@@ -623,7 +611,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x18b2555b76A24ce30fe678D601dA01d57C9f1879",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 8289.263218968521
+      "cumulativeDebt": 8315.016269745898
     },
     {
       "trancheId": 48900000005,
@@ -635,7 +623,7 @@
       "borrowablePer10k": 6000,
       "owner": "0xc0702Ae0374F83fc3bA71CE2B30A323b09EC19da",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 1344.7394918375246
+      "cumulativeDebt": 1348.9173232684761
     },
     {
       "trancheId": 51800000005,
@@ -647,7 +635,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xAb42D5778423cd7Eb08bA08aA3Dac3c0acBaa019",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 2303.8188361779185
+      "cumulativeDebt": 2310.976331591287
     },
     {
       "trancheId": 52500000005,
@@ -659,7 +647,7 @@
       "borrowablePer10k": 8000,
       "owner": "0x30194f526c6b08F8E33Af1753B04322b0450C6c0",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 6389.092675295489
+      "cumulativeDebt": 6461.69600115112
     },
     {
       "trancheId": 52900000005,
@@ -671,7 +659,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x30194f526c6b08F8E33Af1753B04322b0450C6c0",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 539.6585686960326
+      "cumulativeDebt": 545.7910524312148
     },
     {
       "trancheId": 54600000005,
@@ -719,7 +707,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xA5E8903251C49412E835EA341885fE56f80D2960",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 7343.861176518478
+      "cumulativeDebt": 7427.314144433461
     },
     {
       "trancheId": 57300000005,
@@ -755,19 +743,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x50a38311098E0Ce5874F9008e336c8cF3B5d7830",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 229098.00122905028
-    },
-    {
-      "trancheId": 63600000005,
-      "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
-      "collateral": "135393143303633797991",
-      "debt": 855.6332299246894,
-      "token": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
-      "collateralValue": 1504.469500343059,
-      "borrowablePer10k": 7000,
-      "owner": "0xC532B62Edcc417a9797e66816FD7f1FD9D74C8da",
-      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 70161.9248538244
+      "cumulativeDebt": 230193.4959218339
     },
     {
       "trancheId": 64700000005,
@@ -779,7 +755,7 @@
       "borrowablePer10k": 6000,
       "owner": "0x71Ae2f25F3B8Be836D3703BbAeCF6eBe6ACDB86d",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 12733.382104813087
+      "cumulativeDebt": 12826.605608931908
     },
     {
       "trancheId": 55900000005,
@@ -803,7 +779,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x71Ae2f25F3B8Be836D3703BbAeCF6eBe6ACDB86d",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 19800.99300807673
+      "cumulativeDebt": 19971.445913592255
     },
     {
       "trancheId": 65900000005,
@@ -815,7 +791,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x4B4F1F4a769e7543E7Bb9eBBe25312aCd9EE752b",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 13095.573505209784
+      "cumulativeDebt": 13321.359255299609
     },
     {
       "trancheId": 66900000005,
@@ -827,7 +803,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x2457018Be55Fff73335440c5218901cfbe55f1d6",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 630.6021323802535
+      "cumulativeDebt": 633.9924664253086
     },
     {
       "trancheId": 50400000005,
@@ -839,7 +815,7 @@
       "borrowablePer10k": 6000,
       "owner": "0xaF308D1dF7463866B53a6904faeE21C3B4b77D0E",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 3782.765926089062
+      "cumulativeDebt": 3810.3773562065003
     },
     {
       "trancheId": 67500000005,
@@ -863,7 +839,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x9eF7d36C55DF1E3C47396F0394EC2111Bb81807e",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 96293.45704607549
+      "cumulativeDebt": 97482.26515775544
     },
     {
       "trancheId": 68900000005,
@@ -887,7 +863,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xa6f79C7686643B4F8E5D805CFAC1Bf40d56Cbb3c",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 929.3345844686293
+      "cumulativeDebt": 946.5444841810113
     },
     {
       "trancheId": 69400000005,
@@ -899,7 +875,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xBDaCEB4f3b4042C833aCD72ED185B17Ff73C5F25",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 445.66147500062556
+      "cumulativeDebt": 453.9144652784149
     },
     {
       "trancheId": 53200000005,
@@ -935,7 +911,7 @@
       "borrowablePer10k": 6000,
       "owner": "0xcCFF69a21EF1c8E25bDa6B7E048D0026e9348f51",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 196094.51442256034
+      "cumulativeDebt": 198856.21846436054
     },
     {
       "trancheId": 72900000005,
@@ -947,7 +923,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x08d374628839Fa34ebdA9cB40CCa3D891E4A4885",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 38698.096801460975
+      "cumulativeDebt": 39137.84790147758
     },
     {
       "trancheId": 74100000005,
@@ -959,7 +935,7 @@
       "borrowablePer10k": 6897,
       "owner": "0x206815261f480A98498A7F7554356Ff3D7fB303F",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 7814.179298073848
+      "cumulativeDebt": 7901.003512496891
     },
     {
       "trancheId": 74400000005,
@@ -1010,18 +986,6 @@
       "cumulativeDebt": null
     },
     {
-      "trancheId": 78700000005,
-      "strategy": "0x9598173D41214353f68e453CD9a96EdFcb8bf8Ba",
-      "collateral": "500183857419085462919",
-      "debt": 153.8688310969243,
-      "token": "0x9e295B5B976a184B14aD8cd72413aD846C299660",
-      "collateralValue": 383.6925949448397,
-      "borrowablePer10k": 6897,
-      "owner": "0xA8D61173033dFF6c0B65C7673da321D68c8d1080",
-      "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": null
-    },
-    {
       "trancheId": 78900000005,
       "strategy": "0x3d8f5E342d5ff24F83aBE2646D1A6B744977228a",
       "collateral": "491815797070230865307",
@@ -1031,7 +995,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xD39F66EC279673c3D619B1E84CB9411f6421c770",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 133360.63565550226
+      "cumulativeDebt": 135742.07557792196
     },
     {
       "trancheId": 77300000005,
@@ -1043,7 +1007,7 @@
       "borrowablePer10k": 6897,
       "owner": "0xEEE1FEA99658df64E3edE13315dBe61D27BDa848",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 534033.6659591026
+      "cumulativeDebt": 542510.3908155962
     },
     {
       "trancheId": 79600000005,
@@ -1055,7 +1019,7 @@
       "borrowablePer10k": 6897,
       "owner": "0xbEE8F84Bb7A4f18C17A685763b974d2B2756a65F",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 247737.69656992133
+      "cumulativeDebt": 250729.43582019955
     },
     {
       "trancheId": 79900000005,
@@ -1067,7 +1031,7 @@
       "borrowablePer10k": 7000,
       "owner": "0x82784592893afcDec068050c6a10A7d0233293f9",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 31660.089938901823
+      "cumulativeDebt": 32235.727937790947
     },
     {
       "trancheId": 80600000005,
@@ -1079,7 +1043,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xd6c653291b7e158ec31DE22e71843E7E16ad7304",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 193.170108874552
+      "cumulativeDebt": 194.58010966925676
     },
     {
       "trancheId": 81100000005,
@@ -1163,7 +1127,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xE0123787c8B073Eb1BAfbFacA9Cd39EEed2345D3",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 4416.267522136532
+      "cumulativeDebt": 4468.8421354953
     },
     {
       "trancheId": 84700000005,
@@ -1187,7 +1151,7 @@
       "borrowablePer10k": 7000,
       "owner": "0xC4C93D09d45DF1cE52053fDc0bEFcC49b01884eA",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 987.5506515403597
+      "cumulativeDebt": 998.7728180351365
     },
     {
       "trancheId": 85800000005,
@@ -1211,7 +1175,7 @@
       "borrowablePer10k": 6000,
       "owner": "0x426261850e849013E7376A04AD0C2dCE4F6C52CB",
       "trancheContract": "0x55E343c27B794E7FCfebEf4bEA3dE24093418c50",
-      "cumulativeDebt": 24543.17828016736
+      "cumulativeDebt": 25006.257115642216
     },
     {
       "trancheId": 87100000005,
